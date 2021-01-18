@@ -4,8 +4,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-sidebar {width: 120px;background: #757575;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
-#audio {
-  
+/* Create two columns of floating rows for */
+figure {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 10px
 }
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/* Remove margins from "page content" and change arrangement of audio on small screens */
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+  figure {width: 100%}
+}
