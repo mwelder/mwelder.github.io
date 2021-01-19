@@ -4,6 +4,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-sidebar {width: 120px;background: #757575;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
+
+#panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    cursor:pointer;
+    border:solid 1px #f1f1f1!important;
+}
+
+#panel {
+    display: none;
+    cursor:auto;
+    margin-bottom: 16px!important;
+}
+
+#button {
+  color:#000;
+}
 /* Create two columns of floating rows for */
 figure {
   float: left;
@@ -11,8 +29,26 @@ figure {
   margin: auto;
   padding: 10px
 }
+
+.my-dark-grey {
+  color: #000!important;
+  background-color: #181a1b!important
+}
+
+.my-text-grey {
+  color: #bfbfbf!important
+}
+
+p.audio-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 4px 8px!important;
+  text-align: justify;
+  text-justify: inter-word;
+}
 /* Remove margins from "page content" and change arrangement of audio on small screens */
 @media only screen and (max-width: 600px) {
   #main {margin-left: 0}
   figure {width: 100%}
+  iframe {width: 100%; height: auto}
 }

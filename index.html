@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+
 <title>Morgan Elder's Website</title>
 <meta charset="UTF-8">
 
-<!--
-Check out this link to see the various class names you can use with w3
-https://www.w3schools.com/w3css/4/w3.css
--->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -15,7 +13,23 @@ https://www.w3schools.com/w3css/4/w3.css
    type = "text/css"
    href = "index.css" />
 
-<body class="w3-white">
+<script>
+function myShowFunction() {
+  if (document.getElementById("panel").style.display == "none") {
+   document.getElementById("panel").style.display = "block";
+   document.getElementById("button").className = "fa fa-minus-square";
+  }
+  else {
+    document.getElementById("panel").style.display = "none";
+    document.getElementById("button").className = "fa fa-plus-square";
+  }
+}
+
+</script>
+
+</head>
+
+<body class="my-dark-grey">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -61,69 +75,115 @@ https://www.w3schools.com/w3css/4/w3.css
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-    <h1 class="w3-jumbo">Hi, I'm Morgan.</h1>
-    <p>Music Techonolgy Student at The University of Michigan.</p>
-    <img src="./llama-1.png" alt="boy" class="w3-image" width="200" height="200">
+  <header class="w3-display-container w3-content w3-center" id="home">
+    <img class="w3-image" src="Website_Banner.jpg" width="9127" height="2830" style="margin: -10px">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center"
+    class="w3-display-middle w3-padding-large w3-content w3-border w3-wide">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Morgan Elder.</h1>
+      <h5 class="w3-hide-large" style="white-spave:nowrap">Morgan Elder.</h5>
+      <h5 class="w3-hide-medium w3-hide-small">Music Techonolgy Student at The University of Michigan.</h5>
+    </div>
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-black">About Me</h2>
+  <div class="w3-content w3-justify my-text-grey w3-padding-32" id="about">
+    <h2 class="w3-text-white">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
     <!-- EDIT THIS SECTION TO CHANGE YOUR ABOUT ME -->
-    <p> Hello! My name is Morgan Elder. I am a Sophomore at The University of Michigan in the School of Music, Theatre & Dance currently pursuing a degree in Performing Arts Technology
-      with a concentration in audio for media. I have a passion for soundtrack music, sound design, and audio for interactive media, particularly video games.
-      I love seeking out to learn new things, enjoy collaboration, and am both open-minded and globally-oriented.
+    <p>
+      Welcome! My name is Morgan Elder. I am a sophomore at the University of Michigan in the School of Music, Theatre & Dance majoring in Performing
+      Arts Technology with a concentration in audio for multimedia. I have a passion for the intersections between audio and technology, especially
+      when dealing with interactive user experiences like soundtracks and sound design for video games or VR applications.
       <br><br>
-      In addition, I have interests in game design, programming, and languages. My hobbies include animated film, video games (both designing and playing), and practicing Spanish and Japanese.
+      When I'm not working on audio projects, you can often find me practicing programming skills, improving my Spanish or Japanese, or enjoying movies.
     </p>
 
   <!-- End About Section -->
   </div>
 
+  <!-- Download Button -->
+  <div class="w3-content w3-center">
+    <a href="Elder_Morgan_Resume.pdf" target="_blank">
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+      </button>
+    </a>
+  </div>
+
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="portfolio">
-    <h2 class="w3-text-black">Portfolio</h2>
+  <div class="w3-padding-32 w3-content my-text-grey" id="portfolio">
+    <h2 class="w3-text-white">Portfolio</h2>
     <hr style="width:200px" class="w3-opacity">
-          <figure>
-            <figcaption><h4>Void (2020)</h4></figcaption>
-            <audio controls src="Void.m4a" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-            <figcaption><p class="w3-text-grey w3-padding-small">text here</p></figcaption>
-          </figure>
-          <figure>
-            <figcaption><h4>Voice Composition (2019)</h4></figcaption>
-            <audio controls src="Voice-Comp.m4a" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-            <figcaption><p class="w3-text-grey w3-padding-small">text here</p></figcaption>
-          </figure>
-          <figure>
-            <figcaption><h4>ameagari no yume / 雨上がりの夢 (2019)</h4></figcaption>
-            <audio controls src="ame-agari-no-yume.m4a" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-          </figure>
-          <figure>
-            <figcaption><h4>ameagari no yume / 雨上がりの夢 (2019)</h4></figcaption>
-            <audio controls src="ame-agari-no-yume.m4a" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-          </figure>
-          <figure style="float: none; align: left">
-            <figcaption><h4>ameagari no yume / 雨上がりの夢 (2019)</h4></figcaption>
-            <audio controls src="ame-agari-no-yume.m4a" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-          </figure>
+    <figure>
+      <iframe width="420" height="315"
+        src="https://youtu.be/HuewdJFRNTk" title="VOID (2020) - Sight & Sound: UMMA Musical Labels">
+      </iframe>
+    </figure>
+    <figure>
+      <figcaption><h4>Void (2020) [Full Audio]</h4></figcaption>
+      <audio controls src="Void.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+        <p class="audio-desc">
+          In the <b>Sight & Sound</b> project, I was one of several students who worked along with the University of Michigan Museum of Art by
+          creating both original musical works and new recordings of existing works, to accompany each grouping of art pieces in the UMMA’s
+          Collection Ensemble installation.
+          <br><br>
+          My composition, "Void", is inspired by two sculptures, <i>Flora</i> (1850) by Richard James Wyatt and <i>Nydia,
+          the Blind Flower Girl of Pompeii</i> (1861) by Randolph Rogers, as well as by the photograph print <i>Basílica do Palácia Nacional de
+          Mafra</i> (2006) by Candida Höfer.
+        </p>
+    </figure>
+    <br style="clear: both">
+    <figure>
+      <figcaption><h4>Ameagari no Yume (2019)</h4></figcaption>
+      <audio controls src="ame-agari-no-yume.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+        <p class="audio-desc">
+          "Ameagari no Yume", or After-Rain Dream, is a piece that pays homage to some of my inspirations in music, including an artist of the name
+          <b>Ujico*/Snail's House</b>, by using a wide variety of synths and musical recordings along with other sound recordings in order to create
+          a detailed sonic scenery.
+        </p>
+    </figure>
+    <figure>
+      <figcaption><h4>Spring Yard Zone (Big Band Jazz) (2018)</h4></figcaption>
+      <a href="Spring_Yard_Zone_(Final)-Score_and_Parts.pdf" target="_blank">
+        <button class="w3-button w3-light-grey w3-padding-large">
+            <i class="fa fa-download"></i> Open Score PDF
+        </button>
+      </a>
+      <a href=https://youtu.be/WNMUOzadwPM target="_blank">
+        <button class="w3-button w3-light-grey w3-padding-large">
+            <i class="fa fa-play"></i> Play on Youtube
+        </button>
+      </a>
+      <p class="audio-desc">
+        Fueled from my passion for video game music, I arranged my first jazz chart based off of a classic. My big band jazz arrangement of "Spring
+        Yard Zone", from <i>Sonic the Hedgehog</i> (1991) and originally composed by Masato Nakamura, with some original sections I composed. I
+        performed this piece in concert with my school's jazz band in December 2018, making it the first piece of mine to be performed live rather
+        than digitally.
+      </p>
+    </figure>
+
+    <!-- Drop-down Button -->
+    <div class="w3-padding-32 w3-content my-text-grey" style="clear:both">
+      <p class="flip w3-text-black w3-light-grey" style="margin-top: 16px!important; margin-bottom: 0px!important;" onclick="myShowFunction()">
+        <i class="fa fa-plus-square" id="button"></i> Other Projects
+      </p>
+
+      <!-- Hidden Portfolio Section -->
+      <div class="w3-button w3-padding-large my-text-grey" id="panel">
+        <p><b><i>Coming very soon!</i><b></p>
+      </div>
+    </div>
+
   <!-- End Portfolio Section -->
   </div>
 
   <!-- Education Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="education">
-    <h2 class="w3-text-black">Education</h2>
+  <div class="w3-padding-32 w3-content my-text-grey" style="clear:both" id="education">
+    <h2 class="w3-text-white">Education</h2>
     <hr style="width:200px" class="w3-opacity">
     <!-- EDIT THIS SECTION TO CHANGE YOUR College info -->
     <h3><b>University of Michigan - Ann Arbor</b></h3>
@@ -140,7 +200,7 @@ https://www.w3schools.com/w3css/4/w3.css
     High School and International Baccalaureate (IB) Diplomas
     <p><i>Class of 2019</i></p>
     <ul>
-      <li>Graduated Summa Cum Laude with 4.24 GPA.</li>
+      <li>Graduated summa cum laude with 4.24 GPA.</li>
       <li>Two-time sole recipient of Award for Outstanding Achievement in IB Music twice (2018, 2019).</li>
       <li>Member of National Honor Society, Music Honor Society, and Spanish Honor Society.</li>
       <li>Principal alto saxophonist in Concert Band and Jazz Band.</li>
@@ -151,8 +211,8 @@ https://www.w3schools.com/w3css/4/w3.css
 
 
   <!-- Experience Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="experience">
-    <h2 class="w3-text-black">Experience</h2>
+  <div class="w3-padding-32 w3-content my-text-grey" id="experience">
+    <h2 class="w3-text-white">Experience</h2>
     <hr style="width:200px" class="w3-opacity">
     <!-- EDIT THIS SECTION TO CHANGE One experience section -->
     <h3><b>Freelance Tutoring</b></h3>
@@ -177,8 +237,8 @@ https://www.w3schools.com/w3css/4/w3.css
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-grey">Contact Me</h2>
+  <div class="w3-padding-32 w3-content my-text-grey" id="contact">
+    <h2 class="my-text-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>I am always open to chat about new opportunities and my passions.
       <br />
@@ -188,7 +248,9 @@ https://www.w3schools.com/w3css/4/w3.css
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> West Bloomfield, MI</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 (949)-554-5527 </p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mwelder@att.net</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="https://www.linkedin.com/in/morgan-elder-605068191/">LinkedIn</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>
+        <a href="https://www.linkedin.com/in/morgan-elder-605068191/">LinkedIn</a>
+      </p>
 
     </div><br>
 
@@ -196,7 +258,7 @@ https://www.w3schools.com/w3css/4/w3.css
   </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <footer class="w3-content w3-padding-32 my-text-grey w3-xlarge">
 
     <!-- SOCIAL MEDIA ICONS (uncomment if you want them )-->
     <!--
