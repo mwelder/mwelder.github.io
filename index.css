@@ -9,13 +9,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     font-size: 16px;
     padding: 10px;
     text-align: center;
-    cursor:pointer;
-    border:solid 1px #f1f1f1!important;
+    cursor: pointer;
+    border: solid 1px #f1f1f1!important;
 }
 
 #panel {
     display: none;
-    cursor:auto;
+    cursor: auto;
     margin-bottom: 16px!important;
 }
 
