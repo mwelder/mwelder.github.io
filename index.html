@@ -90,9 +90,9 @@ function myShowFunction() {
     <hr style="width:200px" class="w3-opacity">
     <!-- EDIT THIS SECTION TO CHANGE YOUR ABOUT ME -->
     <p>
-      Welcome! My name is Morgan Elder. I am a junior at the University of Michigan in Ann Arbor, majoring in Performing Arts Technology at the
+      Welcome! My name is Morgan Elder. I'm a junior at the University of Michigan in Ann Arbor, majoring in Performing Arts Technology at the
       School of Music, Theatre & Dance and minoring in Computer Science. I have a passion for the intersections between audio and
-      technology, especially when dealing with interactive user experiences like soundtracks and sound design for video games or VR applications.
+      technology, especially those dealing with interactive user experiences like soundtracks and sound design for video games or VR applications.
       <br><br>
       I graduated high school summa cum laude from the International Academy in Bloomfield Hills, MI with an International Baccalaureate (IB) degree.
       <br><br>
@@ -115,15 +115,29 @@ function myShowFunction() {
   </div>
 
   <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content my-text-grey" id="portfolio">
-    <h2 class="w3-text-white">Portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <figure>
-      <iframe width="420" height="315"
+  <div class="w3-padding-32 w3-content my-text-grey portfolio" id="portfolio">
+    <div style="grid-column: 1 / 3">
+      <h2 class="w3-text-white">Portfolio</h2>
+      <hr style="width:200px" class="w3-opacity">
+    </div>
+    <figure style="grid-column: 1">
+      <iframe width="100%" height="315px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+        src="https://player.vimeo.com/video/543803330" title="Bromance - Short Film">
+      </iframe>
+    </figure>
+    <figure style="grid-column: 2">
+      <figcaption><h4>Bromance (2021)</h4></figcaption>
+        <p class="audio-desc">
+          <i>Bromance</i> is a student film made by a team of 7. This is the first student film I've worked. I was responsible for recording and mixing all of the dialogue and sound
+          on set; creating sound effects; and editing and mixing all of the sound together for the final product.
+        </p>
+    </figure>
+    <figure style="grid-column: 1">
+      <iframe width="100%" height="315px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
         src="https://www.youtube.com/embed/HuewdJFRNTk/" title="VOID (2020) - Sight & Sound: UMMA Musical Labels">
       </iframe>
     </figure>
-    <figure>
+    <figure style="grid-column: 2">
       <figcaption><h4>Void (2020) [Full Audio]</h4></figcaption>
       <audio controls src="Void.m4a" type="audio/mp4">
         Your browser does not support the audio element.
@@ -138,8 +152,10 @@ function myShowFunction() {
           Mafra</i> (2006) by Candida Höfer.
         </p>
     </figure>
+    <!-- Maybe delete. old
     <br style="clear: both">
-    <figure>
+    -->
+    <figure style="grid-column: 1">
       <figcaption><h4>Ameagari no Yume (2019)</h4></figcaption>
       <audio controls src="ame-agari-no-yume.m4a" type="audio/mp4">
         Your browser does not support the audio element.
@@ -149,7 +165,7 @@ function myShowFunction() {
           House, by using a wide variety of synths and musical recordings along with other sound recordings in order to create a varied sonic scenery.
         </p>
     </figure>
-    <figure>
+    <figure style="grid-column: 2">
       <figcaption><h4>Spring Yard Zone (Big Band Jazz) (2018)</h4></figcaption>
       <a href="Spring_Yard_Zone_(Final)-Score_and_Parts.pdf" target="_blank">
         <button class="w3-button w3-light-grey w3-padding-large">
@@ -168,7 +184,7 @@ function myShowFunction() {
         mine to be performed live.
       </p>
     </figure>
-    <figure>
+    <figure style="grid-column: 1">
       <figcaption><h4>Golden (2016)</h4></figcaption>
       <audio controls src="Golden.m4a" type="audio/mp4">
         Your browser does not support the audio element.
@@ -177,7 +193,7 @@ function myShowFunction() {
           "Golden" is a house-inspired track that uses samples from Jill Scott's track of the same name.
         </p>
     </figure>
-    <figure>
+    <figure style="grid-column: 2">
       <figcaption><h4>Space Minigame (2019)</h4></figcaption>
       <audio controls src="Space Minigame.m4a" type="audio/mp4">
         Your browser does not support the audio element.
@@ -232,6 +248,15 @@ function myShowFunction() {
   <!-- Experience Section -->
   <div class="w3-padding-32 w3-content my-text-grey" id="experience">
     <h2 class="w3-text-white">Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h3 style="display:inline"><b>Production Assistant </b></h3>
+    <p style="display:inline"> for Video Game Music course (PAT 305 / MUSFERF 300)</p>
+    <p>University of Michigan</p>
+    <p>Ann Arbor, MI, <i>June 2021 - Current</i></p>
+    <ul>
+      <li>Sets up equipment and operates cameras and audio with a switcher to record and livestream performances online.
+    </ul>
     <hr style="width:200px" class="w3-opacity">
 
     <h3 style="display:inline"><b>Grader </b></h3>
