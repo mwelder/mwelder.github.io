@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="path/to/font-awesome-4.7.0/css/font-awesome.css"> -->
 <link rel = "stylesheet"
    type = "text/css"
    href = "index.css" />
@@ -33,9 +34,13 @@ function myShowFunction() {
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Link to font awesome icons https://fontawesome.com/v4.7.0/icons/ just change the name after fa- and it will change the icon! -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
+  </a>
+  <a href="blog.html" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-gamepad w3-xxlarge"></i>
+    <p>BLOG <i class="fa fa-external-link"></i></p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
@@ -88,7 +93,6 @@ function myShowFunction() {
   <div class="w3-content w3-justify my-text-grey w3-padding-32" id="about">
     <h2 class="w3-text-white">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <!-- EDIT THIS SECTION TO CHANGE YOUR ABOUT ME -->
     <p>
       Welcome! My name is Morgan Elder. I'm a junior at the University of Michigan in Ann Arbor, majoring in Performing Arts Technology at the
       School of Music, Theatre & Dance and minoring in Computer Science. I have a passion for the intersections between audio and
@@ -119,6 +123,14 @@ function myShowFunction() {
     <div style="grid-column: 1 / 3">
       <h2 class="w3-text-white">Portfolio</h2>
       <hr style="width:200px" class="w3-opacity">
+    </div>
+    <!-- Blogs Link -->
+    <div class="w3-content w3-center" style="grid-column: 1 / 3">
+      <a href="blog.html" target="_blank">
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <i class="fa fa-gamepad"></i> Link to Game Dev Blog
+        </button>
+      </a>
     </div>
     <figure style="grid-column: 1">
       <iframe width="100%" height="315px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
@@ -305,7 +317,7 @@ function myShowFunction() {
       <li>Assisted instruction for Summer STEM program focused on energy engineering for kids ages 8-10.</li>
     </ul>
 
-  <!-- End Experiencee Section -->
+  <!-- End Experience Section -->
   </div>
 
   <!-- Contact Section -->

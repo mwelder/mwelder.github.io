@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Game Dev Blogs</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "index.css" />
+
+<script>
+function myShowFunction() {
+  if (document.getElementById("panel").style.display == "none") {
+   document.getElementById("panel").style.display = "block";
+   document.getElementById("button").className = "fa fa-minus-square";
+  }
+  else {
+    document.getElementById("panel").style.display = "none";
+    document.getElementById("button").className = "fa fa-plus-square";
+  }
+}
+</script>
+
+</head>
+
+<body class="my-dark-grey">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Link to font awesome icons https://fontawesome.com/v4.7.0/icons/ just change the name after fa- and it will change the icon! -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-gamepad w3-xxlarge"></i>
+    <p>BLOG</p>
+  </a>
+  <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>BACK TO HOME <i class="fa fa-external-link"></i></p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-display-container w3-content w3-center" id="home">
+    <img class="w3-image" src="Tower.png" alt="Project Tower Logo" width="200" style="display:block; margin-right:auto">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center"
+    class="w3-display-middle w3-padding-large w3-content w3-border w3-wide">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Morgan Elder's</h1>
+      <h5 class="w3-hide-large" style="white-spave:nowrap">Morgan Elder's</h5>
+      <h5 class="w3-hide-medium w3-hide-medium">WolverineSoft Game Dev Blog</h5>
+    </div>
+  </header>
+
+  <!-- Blog Section -->
+  <div class="w3-content my-text-grey w3-padding-32" id="blog">
+    <h2 class="w3-text-white">Dev Blog</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-padding-32 w3-content my-text-grey" style="clear:both">
+      <p class="flip w3-text-black w3-light-grey" style="margin-top: 16px!important; margin-bottom: 0px!important;" onclick="myShowFunction()">
+        <i class="fa fa-plus-square" id="button"></i> Oct 17 Entry
+      </p>
+
+      <div class="w3-button w3-padding-large w3-justify my-text-grey" id="panel">
+        <p><b><i>Coming soon...</i><b></p>
+      </div>
+    </div>
+
+  <!-- End Portfolio Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-32 my-text-grey w3-xlarge">
+
+    <p class="w3-medium">
+      Website created by me, Morgan!
+      <br>
+      Some styling help from <a href="https://www.w3schools.com/" target="_blank">w3s</a>
+    </p>
+    <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
