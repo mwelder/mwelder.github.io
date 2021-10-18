@@ -17,6 +17,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     display: none;
     cursor: auto;
     margin-bottom: 16px!important;
+    padding: 10px;
+}
+
+#panel-open {
+    display: block;
+    cursor: auto;
+    margin-bottom: 16px!important;
+    padding: 10px;
 }
 
 #button {
@@ -53,6 +61,11 @@ figure {
   color: #bfbfbf!important
 }
 
+p.small-p-text {
+  font-size: 14px;
+  text-align: justify;
+}
+
 p.audio-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -60,6 +73,18 @@ p.audio-desc {
   text-align: justify;
   text-justify: inter-word;
 }
+
+center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .wide-panel {
+  width: 500%;
+  margin-left: -200%;
+} */
+
 /* Remove margins from "page content" and change arrangement of audio on small screens */
 @media only screen and (max-width: 600px) {
   #main {margin-left: 0}
