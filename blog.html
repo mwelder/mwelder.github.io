@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css" />
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <script>
     function myShowFunction() {
       if (document.getElementById("panel").style.display == "none") {
@@ -70,165 +79,272 @@
       <h2 class="w3-text-white">Dev Blog</h2>
       <hr style="width:200px" class="w3-opacity">
 
-      <!-- Oct 10/17 Entry-->
-      <div>
-        <p class="flip w3-text-black w3-light-grey w3-hover-grey" style="margin-top: 16px!important; margin-bottom: 0px!important;" onclick="myShowFunction()">
-          <i class="fa fa-plus-square" id="button"></i> Oct 17 Entry
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <!-- End 10/17 Entry -->
+  <div class="panel panel-default">
+    <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Oct 17 Entry
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body my-text-grey">
+        <h4 class="w3-text-white">Playing Bloons Tower Defense 6</h4>
+        <p class="small-p-text">To start this sprint and to prepare for my first deliverables, I
+          finally sat down to play Bloons Tower Defense 6 for the first time.
+          Not only was it important that I become more familiar with the game
+          that Project Tower is based on, but I specifically wanted to take a
+          look at the approach to audio in BTD6. I accessed what I think does
+          and doesn't work in the game's audio as well as which aspects I'd want
+          to adapt to Project Tower.<br><br>
+
+          I noted that the music overall is very cheery and energetic. The main
+          menu music is pleasant and upbeat which fits with the bright,
+          colorful visuals and laid-back feel. Once I entered the first level,
+          the music had a very similar energy to it.<br><br>
+
+          While the music is pleasant, inoffensive, and appropriate with the
+          game's theme, I felt that it was a bit stagnant and maybe too
+          consistent in all aspects. The meter, mode, instruments, and overall
+          musical style were all largely unchanging between tracks. It was all
+          a bit too samey for my liking, especially for a soundtrack that
+          demands some level of attention from the player with how high-energy
+          it is.<br><br>
+
+          This music struck me as the kind that a player would have no problem
+          turning off if they were to play for long periods of time since it's
+          so repetitive and unchanging. To avoid making easily mutable or
+          uninteresting music for Project Tower, I want to focus on making
+          appropriately long music loops, varied music tracks, and a polished
+          sound overall. I also would love for the chance to implement an
+          adaptive soundtrack that would rise and fall in tension in accordance
+          to player progress or level difficulty, but I understand that this
+          may be a stretch goal and I'll have to further discuss it with the
+          rest of the audio team.<br><br>
+
+          The sound effects for placing units and popping balloons were
+          appropriately simple and did their job well and I hope to replicate
+          their style for Project Tower. However, the fact that the balloon
+          popping SFX is so constant, I want to be sure that whichever sound
+          Project Tower uses for defeating enemies never gets tiring to hear by
+          means of adding variation.<br><br>
+
+          There are voice-over sound effects for the powerful Hero monkey units
+          in BTD6. While this has inspired me to consider voice-overs for
+          narrative cutscenes or as feedback sounds during gameplay, I really
+          disliked the voice-over used in BTD6. It's a little difficult for me
+          to point my finger on why, but something about the voices and lines
+          given to these monkey characters struck me as campy and inconsistent
+          with the rest of the game’s theme. I'll be able to have a better idea
+          of what not to do if voice-overs are ever added to Project Tower.
         </p>
-        <div class="w3-padding-large w3-justify my-text-grey w3-hover-none" id="panel">
-          <h4 class="w3-text-white">Playing Bloons Tower Defense 6</h4>
-          <p class="small-p-text">To start this sprint and to prepare for my first deliverables, I
-            finally sat down to play Bloons Tower Defense 6 for the first time.
-            Not only was it important that I become more familiar with the game
-            that Project Tower is based on, but I specifically wanted to take a
-            look at the approach to audio in BTD6. I accessed what I think does
-            and doesn't work in the game's audio as well as which aspects I'd want
-            to adapt to Project Tower.<br><br>
-
-            I noted that the music overall is very cheery and energetic. The main
-            menu music is pleasant and upbeat which fits with the bright,
-            colorful visuals and laid-back feel. Once I entered the first level,
-            the music had a very similar energy to it.<br><br>
-
-            While the music is pleasant, inoffensive, and appropriate with the
-            game's theme, I felt that it was a bit stagnant and maybe too
-            consistent in all aspects. The meter, mode, instruments, and overall
-            musical style were all largely unchanging between tracks. It was all
-            a bit too samey for my liking, especially for a soundtrack that
-            demands some level of attention from the player with how high-energy
-            it is.<br><br>
-
-            This music struck me as the kind that a player would have no problem
-            turning off if they were to play for long periods of time since it's
-            so repetitive and unchanging. To avoid making easily mutable or
-            uninteresting music for Project Tower, I want to focus on making
-            appropriately long music loops, varied music tracks, and a polished
-            sound overall. I also would love for the chance to implement an
-            adaptive soundtrack that would rise and fall in tension in accordance
-            to player progress or level difficulty, but I understand that this
-            may be a stretch goal and I'll have to further discuss it with the
-            rest of the audio team.<br><br>
-
-            The sound effects for placing units and popping balloons were
-            appropriately simple and did their job well and I hope to replicate
-            their style for Project Tower. However, the fact that the balloon
-            popping SFX is so constant, I want to be sure that whichever sound
-            Project Tower uses for defeating enemies never gets tiring to hear by
-            means of adding variation.<br><br>
-
-            There are voice-over sound effects for the powerful Hero monkey units
-            in BTD6. While this has inspired me to consider voice-overs for
-            narrative cutscenes or as feedback sounds during gameplay, I really
-            disliked the voice-over used in BTD6. It's a little difficult for me
-            to point my finger on why, but something about the voices and lines
-            given to these monkey characters struck me as campy and inconsistent
-            with the rest of the game’s theme. I'll be able to have a better idea
-            of what not to do if voice-overs are ever added to Project Tower.
-          </p>
-          <h4 class="w3-text-white">Meeting with the Audio Team</h4>
-          <p class="small-p-text">I've begun having weekly Tuesday meetings on
-            Discord with the two others working on audio, Emily and Crystal. In
-            these meetings, we discuss the creative direction and ideas we have
-            for the game’s audio, divide the audio-related issues of the given
-            sprint amongst each other, set short-term deliverable and learning
-            goals for ourselves, plan for upcoming tasks, provide feedback on
-            each other’s work, and more. It’s been a really helpful opportunity
-            to share and develop new ideas, have a smaller team with which I can
-            discuss audio-related issues and goals, learn from the skills of
-            others, and feel organized and motivated as an audio team.
-          </p>
-          <figure style="width:50%; float:right; margin-left:5px;">
-            <img src="MusicIdeasConfluence.png" alt="Music Idea Notes on Confluence" style="width:100%;">
-            <figcaption style="text-align:center; color: white">Music Idea Notes on Confluence</figcaption>
-          </figure>
-          <p class="small-p-text">As I was tasked with creating the first draft of the game’s main
-            menu music and Emily was responsible for the first level music, we
-            met an additional time between our two Tuesday audio team meetings
-            for this Pre-Alpha I sprint. We wanted to collaborate on identifying
-            the beginnings of Project Tower’s musical identity. Since the game’s
-            theme that of Old Norse mythology, we researched and discussed which
-            instruments, musical modes, and styles to use in order to reinforce
-            the game’s theming. As the tone of the project was recently refined
-            by the team working on the game’s narrative, we were also able to
-            discuss how to refine our own musical devices and tone. We created a
-            page in Confluence to record our ideas to refer to later on. This
-            also serves as a living document as we find more resources and come
-            up with more focused ideas.
-            <br><br>
-            Additionally, we started a Youtube
-            playlist full of relevant reference music, video game soundtracks,
-            traditional Scandinavian music, and otherwise, to find inspiration
-            for our own music.
-          </p>
-          <h4 class="w3-text-white">Composing the Main Menu Theme</h4>
-          <p class="small-p-text">Composing the first draft for the main menu
-            music began with several challenges and inconveniences, but turned
-            out well in the end! The process began with me experimenting with
-            various audio tools and plug-ins to see what kind of interesting
-            sounds I’d be able to use for the project. I wasn’t yet familiar
-            with these newer tools, so I then switched to using tools I was more
-            familiar with and ended up with a product that I was satisfied with.
-            <br><br>
-            I referred to the rough notes on the musical devices to use and tone
-            to go for, listened to Emily’s draft of the game’s first level
-            theme, and listened to various reference music (mostly examples of
-            Scandanavian folk and medieval music). These greatly helped inform
-            the direction of my own work and made sure that my menu theme would
-            coincide thematically with the level music as well as with the rest
-            of the game.
-          </p>
-          <figure>
-            <img src="FLMenuProj.png" alt="FL Studio Project" style="width:80%;" class="center">
-            <figcaption style="text-align:center; color: white">The main menu music project in FL Studio.</figcaption>
-          </figure>
-          <p class="small-p-text">With the notes and music references, I sought out instruments that
-            resemble those used in old Scandinavia while using low strings as a
-            drone that ground the piece. I found the instruments I wanted but
-            wanted to make these synthesized instruments sound more convincing
-            and expressive. However, the particular device I needed for this
-            wasn’t working as expected, so I ended up spending a long time
-            troubleshooting without being able to resolve all of the issues. I
-            ultimately had to abandon the device for now and do the best I could
-            with more traditional and limiting methods for the time being.
-          </p>
-          <figure style="width:50%" class="center">
-            <figcaption>
-              <h4>Main Menu Theme Draft</h4>
-            </figcaption>
-            <audio controls src="ProjectTowerMenuDraft1.mp3" type="audio/mp3" class="center">
-              Your browser does not support the audio element.
-            </audio>
-          </figure>
-          <p class="small-p-text">In the end, I think the main menu music draft I’ve produced sounds
-            like a solid start with a melancholic tone, traditional-sounding
-            instruments, and sound samples of the sea all to reinforce the
-            game’s tone and help create a musical identity within the game’s
-            soundtrack.
-          </p>
-          <h3 class="w3-text-white">Hours Breakdown</h3>
-          <ul>
-            <li>Playing <i>BTD6</i> for Reference: <b>1 hour</b></li>
-            <li>Audio Team Meetings: <b>3 hours</b></li>
-            <li>Composing music and troubleshooting DAWs: <b>7 hours</b></li>
-            <li>Experimenting with creating SFX and instruments: <b>2 hours</b></li>
-            <li><i>Total: <b>13 hours</b></i></li>
-          </ul>
-        </div>
-
-        <!-- End 10/17 Entry -->
-      </div>
-
-      <!-- Oct 10/31 Entry-->
-      <div>
-        <p class="flip w3-text-black w3-light-grey w3-hover-grey" style="margin-top: 16px!important; margin-bottom: 0px!important;" onclick="myShowFunction()">
-          <i class="fa fa-plus-square" id="button"></i> Oct 31 Entry
+        <h4 class="w3-text-white">Meeting with the Audio Team</h4>
+        <p class="small-p-text">I've begun having weekly Tuesday meetings on
+          Discord with the two others working on audio, Emily and Crystal. In
+          these meetings, we discuss the creative direction and ideas we have
+          for the game’s audio, divide the audio-related issues of the given
+          sprint amongst each other, set short-term deliverable and learning
+          goals for ourselves, plan for upcoming tasks, provide feedback on
+          each other’s work, and more. It’s been a really helpful opportunity
+          to share and develop new ideas, have a smaller team with which I can
+          discuss audio-related issues and goals, learn from the skills of
+          others, and feel organized and motivated as an audio team.
         </p>
-        <div class="w3-padding-large w3-justify my-text-grey w3-hover-none" id="panel">
-          <p><b><i>Work in Progress...</i></b></p>
-        </div>
-
-        <!-- End 10/31 Entry -->
+        <figure style="width:50%; float:right; margin-left:5px;">
+          <img src="MusicIdeasConfluence.png" alt="Music Idea Notes on Confluence" style="width:100%;">
+          <figcaption style="text-align:center; color: white">Music Idea Notes on Confluence</figcaption>
+        </figure>
+        <p class="small-p-text">As I was tasked with creating the first draft of the game’s main
+          menu music and Emily was responsible for the first level music, we
+          met an additional time between our two Tuesday audio team meetings
+          for this Pre-Alpha I sprint. We wanted to collaborate on identifying
+          the beginnings of Project Tower’s musical identity. Since the game’s
+          theme that of Old Norse mythology, we researched and discussed which
+          instruments, musical modes, and styles to use in order to reinforce
+          the game’s theming. As the tone of the project was recently refined
+          by the team working on the game’s narrative, we were also able to
+          discuss how to refine our own musical devices and tone. We created a
+          page in Confluence to record our ideas to refer to later on. This
+          also serves as a living document as we find more resources and come
+          up with more focused ideas.
+          <br><br>
+          Additionally, we started a Youtube
+          playlist full of relevant reference music, video game soundtracks,
+          traditional Scandinavian music, and otherwise, to find inspiration
+          for our own music.
+        </p>
+        <h4 class="w3-text-white">Composing the Main Menu Theme</h4>
+        <p class="small-p-text">Composing the first draft for the main menu
+          music began with several challenges and inconveniences, but turned
+          out well in the end! The process began with me experimenting with
+          various audio tools and plug-ins to see what kind of interesting
+          sounds I’d be able to use for the project. I wasn’t yet familiar
+          with these newer tools, so I then switched to using tools I was more
+          familiar with and ended up with a product that I was satisfied with.
+          <br><br>
+          I referred to the rough notes on the musical devices to use and tone
+          to go for, listened to Emily’s draft of the game’s first level
+          theme, and listened to various reference music (mostly examples of
+          Scandanavian folk and medieval music). These greatly helped inform
+          the direction of my own work and made sure that my menu theme would
+          coincide thematically with the level music as well as with the rest
+          of the game.
+        </p>
+        <figure>
+          <img src="FLMenuProj.png" alt="FL Studio Project" style="width:80%;" class="center">
+          <figcaption style="text-align:center; color: white">The main menu music project in FL Studio.</figcaption>
+        </figure>
+        <p class="small-p-text">With the notes and music references, I sought out instruments that
+          resemble those used in old Scandinavia while using low strings as a
+          drone that ground the piece. I found the instruments I wanted but
+          wanted to make these synthesized instruments sound more convincing
+          and expressive. However, the particular device I needed for this
+          wasn’t working as expected, so I ended up spending a long time
+          troubleshooting without being able to resolve all of the issues. I
+          ultimately had to abandon the device for now and do the best I could
+          with more traditional and limiting methods for the time being.
+        </p>
+        <figure style="width:50%" class="center">
+          <figcaption>
+            <h4>Main Menu Theme Draft</h4>
+          </figcaption>
+          <audio controls src="ProjectTowerMenuDraft1.mp3" type="audio/mp3" class="center">
+            Your browser does not support the audio element.
+          </audio>
+        </figure>
+        <p class="small-p-text">In the end, I think the main menu music draft I’ve produced sounds
+          like a solid start with a melancholic tone, traditional-sounding
+          instruments, and sound samples of the sea all to reinforce the
+          game’s tone and help create a musical identity within the game’s
+          soundtrack.
+        </p>
+        <h3 class="w3-text-white">Hours Breakdown</h3>
+        <ul>
+          <li>Playing <i>BTD6</i> for Reference: <b>1 hour</b></li>
+          <li>Audio Team Meetings: <b>3 hours</b></li>
+          <li>Composing music and troubleshooting DAWs: <b>7 hours</b></li>
+          <li>Experimenting with creating SFX and instruments: <b>2 hours</b></li>
+          <li><i>Total: <b>13 hours</b></i></li>
+        </ul>
       </div>
+    </div>
+  </div>
+  <!-- End 10/17 Entry -->
+
+  <!-- 10/31 Entry -->
+  <div class="panel panel-default">
+    <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Oct 31 Entry
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in my-dark-grey" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body my-text-grey">
+        <p class="small-p-text">Overall, it was challenging for me to complete
+          all of the tasks I originally set out to do due to some unexpected
+          obstacles in my progress and several time-consuming priorities in my
+          life that unfortunately coincided with this sprint. Despite the
+          challenges, I was able to create some sound effects and ambiances for
+          the game, I made some strides in learning audio implementation, and
+          the audio team as a whole made good progress in terms of plans for our
+          next tasks. With a new sprint starting and a more typical schedule,
+          I’ll be working hard to plan ahead and complete all my tasks to make
+          up for the ones I missed this sprint.
+        </p>
+        <h4 class="w3-text-white">Audio Team Meetings</h4>
+        <p class="small-p-text">During this sprint, the audio team had two of our weekly meetings and
+          I had one more with Crystal to discuss audio implementation. Beyond
+          the typical discussion of choosing tasks and talking about our
+          progress, something we focused on was creating a more unified sound
+          for the game by finding free audio plug-in software instruments that
+          all of us could use across our different DAWs. We took into
+          consideration the sounds and instruments used in our music drafts
+          until this point as we decided on new accessible, cross-platform
+          instruments to use. We narrowed down all of the main instruments we
+          would need to 1-3 software instruments each and this will be refined
+          as we continue to experiment with these.<br><br>
+
+          I’ve been trying to learn more about the audio implementation side
+          of things, so I had an additional meeting with Crystal who taught me
+          the basics of making and managing new branches of the project,
+          using Wwise, and integrating the Wwise project into the game’s
+          Unity project. I learned a lot and was able to implement a
+          temporary sound effect into the game during this meeting, so I’ll
+          continue practicing by completing Wwise tutorials and I’ll soon be
+          helping Crystal with implementing the sounds and music we create.
+        </p>
+
+        <h4 class="w3-text-white">Recording Ambiances and Creating SFX</h4>
+        <p class="small-p-text">I was tasked with creating some ambiance audio
+          for the game, so I planned to go out to capture some field recordings
+          to have more of my own material to work with. It's not fully decided
+          how the ambiance tracks may be used in the game, but the audio
+          team has considered using ambiances in place of music at key moments
+          in the narrative scenes where it may be appropriate, for as a
+          low-volume background noise along with music during the levels as they
+          change in scenery. One of the sounds I was most looking forward to
+          recording was that of insects and other animals at night. However, the
+          day I had the chance to go out at night to record, the temperature had
+          just dropped dramatically and all of the vibrant insect sounds I heard
+          the day prior had all fallen silent as they died or went dormant for
+          the winter. I also wanted to record the sound of wind rustling the
+          leaves of trees and bushes as the winds in the area picked up and I
+          considered how that could be a cool sound to have in order to recreate
+          a virtual environment in-game. Once I listened back to these
+          recordings, I realized that they were unfortunately unusable. The
+          small portable recorder I have doesn’t have a windshield, so all of
+          the recorded wind noises are really distorted.<br><br>
+
+          Because of these obstacles, I ended up using mostly old nature
+          recordings of mine which were a little limited but they worked well
+          for what I had. So far, the only ambience track ready for
+          implementation is that for crickets.
+        </p>
+        <figure style="width:50%" class="center">
+          <figcaption>
+            <h4>Crickets Ambiance Draft</h4>
+          </figcaption>
+          <audio controls src="AmbienceCrickets.wav" type="audio/wav" class="center">
+            Your browser does not support the audio element.
+          </audio>
+        </figure>
+        <p class="small-p-text">I’ll record more soon, rely on editing preexisting free-to-use
+          sounds from online, and consider synthesizing my own ambient tracks
+          for the future.<br><br>
+
+          I also worked on creating some sound effects by using an online
+          free-to-use sound as a starting point and heavily editing them. I’m
+          familiar with sound design for music, so transferring the skills and
+          knowledge of audio effects to transform sounds into the sound effects
+          that the game needs has been a fun challenge. Here’s the first draft
+          for the sound effect of a bulk enemy ship breaking down.
+        </p>
+      <figure style="width:50%" class="center">
+        <figcaption>
+          <h4>Bulk Enemy Breaking SFX Draft</h4>
+        </figcaption>
+        <audio controls src="BulkEnemyBreak.wav" type="audio/wav" class="center">
+          Your browser does not support the audio element.
+        </audio>
+      </figure>
+        <h3 class="w3-text-white">Hours Breakdown</h3>
+        <ul>
+          <li>Playing <i>BTD6</i> for Reference: <b>2 hours</b></li>
+          <li>Audio Team Meetings: <b>4 hours</b></li>
+          <li>Recording Environmental Audio Samples: <b>2 hour</b></li>
+          <li>Editing Recordings and Creating SFX: <b>4 hours</b></li>
+          <li><i>Total: <b>12 hours</b></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End 10/31 Entry -->
+</div>
 
       <!-- End Blog Section -->
     </div>
