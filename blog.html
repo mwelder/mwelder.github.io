@@ -66,7 +66,7 @@
   <div class="w3-padding-large" id="main">
     <!-- Header/Home -->
     <header class="w3-display-container w3-content w3-center" id="home">
-      <img class="w3-image" src="Tower.png" alt="Project Tower Logo" width="200" style="display:block; margin-right:auto">
+      <img class="w3-image" src="ProjectRageLogo.png" alt="Project Tower Logo" width="200" style="display:block; margin-right:auto">
       <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center" style="background:rgba(24,26,27,0.6)">
         <div style="opacity:90%">
           <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Morgan Elder's</h1>
@@ -76,18 +76,51 @@
       </div>
     </header>
 
-    <!-- Blog Section -->
+    <!-- Project Rage Blog Section -->
     <div class="w3-content my-text-grey w3-padding-32" id="blog">
-      <h2 class="w3-text-white">Dev Blog</h2>
+      <h2 class="w3-text-white">Project Rage (Winter 2022)</h2>
       <hr style="width:200px" class="w3-opacity">
 
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel-group" id="accordionPR" role="tablist" aria-multiselectable="true">
+        <!-- consider changing from panel-group to accordion to try out accordion-flush https://getbootstrap.com/docs/5.0/components/accordion/ -->
+
+        <!-- End 2/6 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPR1">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPR" href="#collapsePR1" aria-expanded="true" aria-controls="collapsePR1">
+                <!-- remove data-parent to make one open at a time ? -->
+                Pre-Production - Feb 6
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePR1" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPR1">
+            <div class="panel-body my-text-grey">
+              <h4 class="w3-text-white">Temp</h4>
+              <p class="small-p-text">
+                Temp
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End 2/6 Entry -->
+
+      </div>
+    </div>
+    <!-- End Project Rage Blog Section -->
+
+    <!-- Project Tower Blog Section -->
+    <div class="w3-content my-text-grey w3-padding-32" id="blog">
+      <h2 class="w3-text-white">Project Tower (Fall 2021)</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="panel-group" id="accordionPT" role="tablist" aria-multiselectable="true">
 
         <!-- End 10/17 Entry -->
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <a role="button" data-toggle="collapse" data-bs-parent="#accordionPT" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Pre-Alpha I - Oct 17
               </a>
             </h4>
@@ -240,7 +273,7 @@
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingTwo">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="collapsed" role="button" data-toggle="collapse" data-bs-parent="#accordionPT" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Pre-Alpha II - Oct 31
               </a>
             </h4>
@@ -351,7 +384,7 @@
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingThree">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed" role="button" data-toggle="collapse" data-bs-parent="#accordionPT" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Pre-Beta I - Nov 14
               </a>
             </h4>
@@ -466,7 +499,7 @@
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingFour">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <a class="collapsed" role="button" data-toggle="collapse" data-bs-parent="#accordionPT" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Pre-Beta II - Nov 28
               </a>
             </h4>
@@ -608,12 +641,12 @@
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingFive">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFive">
+              <a class="collapsed" role="button" data-toggle="collapse" data-bs-parent="#accordionPT" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 Pre-Gold I & II - Dec 12
               </a>
             </h4>
           </div>
-          <div id="collapseFive" class="panel-collapse collapse in my-dark-grey" role="tabpanel" aria-labelledby="headingFive">
+          <div id="collapseFive" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingFive">
             <!-- The 'in' class makes the panel start open -->
             <div class="panel-body my-text-grey">
               <h4 class="w3-text-white">Audio Team Meetings</h4>
@@ -727,7 +760,7 @@
         <!-- End 11/28 Entry -->
       </div>
     </div>
-    <!-- End Blog Section -->
+    <!-- End Project Tower Blog Section -->
 
     <!-- Footer -->
     <footer class="w3-content w3-padding-32 my-text-grey w3-xlarge">
@@ -735,7 +768,7 @@
       <p class="w3-medium">
         Website created by me, Morgan!
         <br>
-        Some styling help from <a href="https://www.w3schools.com/" target="_blank">w3s</a>
+        Styling help from <a href="https://www.w3schools.com/" target="_blank">w3s</a>
       </p>
       <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
       <!-- End footer -->
