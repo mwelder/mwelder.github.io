@@ -85,17 +85,86 @@
       <div class="panel-group" id="accordionPR" role="tablist" aria-multiselectable="true">
         <!-- consider changing from panel-group to accordion to try out accordion-flush https://getbootstrap.com/docs/5.0/components/accordion/ -->
 
-        <!-- 2/6 Entry -->
+        <!-- 3/20 Entry -->
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPR1">
             <h4 class="panel-title">
               <a role="button" data-toggle="collapse" data-parent="#accordionPR" href="#collapsePR1" aria-expanded="true" aria-controls="collapsePR1">
                 <!-- remove data-parent to make one open at a time ? -->
-                Pre-Alpha I - Feb 20
+                Pre-Beta II - Mar 20
               </a>
             </h4>
           </div>
           <div id="collapsePR1" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPR1">
+            <div class="panel-body my-text-grey">
+              <h3 class="w3-text-white">Implementation</h3>
+              <p class="small-p-text">
+                A lot of my time was put into implementation. The rest of the team made a lot of great assets, so I got to put in nearly all of the sound effects for the player, all of the those for 2 of 3 enemy types, menu UI sounds, and I set up a few other sounds in Wwise and Unity that are ready to be put in the game the moment a few more systems are implemented by the other teams. With the team’s great work this sprint, I got to turn a lot of cells in the audio asset list from red to green!
+              </p>
+              <figure style="width:80%; float:center; margin:auto;">
+                <img src="AudioAssetListMar20_1.png" alt="Audio Asset List 1" style="width:100%;">
+              </figure>
+              <figure style="width:80%; float:center; margin:auto;">
+                <img src="AudioAssetListMar20_2.png" alt="Audio Asset List 2" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Audio Asset List</figcaption>
+              </figure>
+              <p class="small-p-text">
+                I ran into a few challenges implementing that left me with less time to work on the SFX and music assets I planned to complete for this sprint. The UI sounds took the longest to implement since I had to add new components for each button object in the game but when I tried to merge my branch, there were a lot of merge conflicts. I started from the beginning and had to redo it two additional times until I figured out a way to implement that avoided the conflicts. This whole process was a lot more time-consuming than I expected, but I learned more about how to implement these unique kinds of sounds and will be more knowledgeable for future situations.
+                <br><br>
+                I also added in the background music for the first level with a temporary implementation that plays the intro section once and loops the rest of the piece. In one of my meetings, I talked a bit with the design team about setting up a system that would allow for dynamic music that would rise and fall in intensity along with the gameplay, so I’ve started planning for that final implementation.
+              </p>
+              <h3 class="w3-text-white">Task Creation and Finding References</h3>
+              <p class="small-p-text">
+                As we had a lot of assets planned for this sprint, I began creating Jira tasks for each individual asset rather than creating a single task for each audio team member which included all of their assigned assets for the sprint. I also worked on finding a balance between simplicity and detail in each task description with a list of simple bullet points followed by an extra section with a few extra details or references as needed. This way, communication on the essential details was done immediately which allowed for the others to get started on their tasks quicker and easier. In the past, when I tried filling up task descriptions with longer and more convoluted descriptions, the extra details didn’t add much and had to be better clarified in later conversations. I still went back and forth with some of the audio members sharing ideas and clarifying details on tasks throughout the sprint and these felt more productive than before since these conversations were helpful for specifically sharing additional references and discussing finer details.
+              </p>
+              <p class="small-p-text">
+                The audio asset list contains all sounds that I can imagine
+                being in the game given the current design details and
+                understanding of the game in this early stage. It will be a
+                living document as more details are clarified and as I continue
+                to make decisions on what sounds are needed.
+              </p>
+              <figure style="width:70%; float:center; margin:auto;">
+                <img src="JiraTaskRAGE269.png" alt="Jira Task Example" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Jira Task Example</figcaption>
+              </figure>
+              <h3 class="w3-text-white">Creating SFX</h3>
+              <p class="small-p-text">
+                I didn’t create too many assets this sprint, but I made a few variations of a knockdown SFX. There was no temp version of this sound before this, so adding it in created some additional feedback that was surprisingly satisfying and cool to hear!
+              </p>
+              <figure style="width:50%" class="center">
+                <figcaption>
+                  <h4>Two Knockdown SFX Variations</h4>
+                </figcaption>
+                <audio controls src="knockdown_preview.mp3" type="audio/mp3" class="center">
+                  Your browser does not support the audio element.
+                </audio>
+              </figure>
+              <h3 class="w3-text-white">Hours Breakdown</h3>
+              <ul>
+                <li>Implementation: <b>10 hours</b></li>
+                <li>Creating Sound Effects: <b>2 hours</b></li>
+                <li>Task Creation and Finding References: <b>3 hours</b></li>
+                <li>Wwise Tutorials: <b>3 hours</b></li>
+                <li>Meetings: <b>3 hours</b></li>
+                <li><i>Total: <b>21 hours</b></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End 3/20 Entry -->
+
+        <!-- 2/6 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPR2">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPR" href="#collapsePR2" aria-expanded="true" aria-controls="collapsePR2">
+                <!-- remove data-parent to make one open at a time ? -->
+                Pre-Alpha I - Feb 20
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePR2" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPR2">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
                 With temp sounds in the game and several references gathered by
@@ -104,7 +173,7 @@
                 will refer to and update throughout the project as well as
                 having the audio team generate brief snippets of concept music.
               </p>
-              <h4 class="w3-text-white">Concept Music Snippets</h4>
+              <h3 class="w3-text-white">Concept Music Snippets</h3>
               <p class="small-p-text">
                 For this sprint I gave each of the four audio team members
                 (including myself) the task to create 2 approximately 30-second
@@ -144,7 +213,7 @@
                 styles of music that all worked well within the overall theme
                 and style of cyberpunk.
               </p>
-              <h4 class="w3-text-white">Documentation and Research</h4>
+              <h3 class="w3-text-white">Documentation and Research</h3>
               <p class="small-p-text">
                 The audio asset list and style document were two important
                 pieces of documentation that I created this sprint. They both
@@ -188,7 +257,7 @@
               </figure>
               <h3 class="w3-text-white">Hours Breakdown</h3>
               <ul>
-                <li>Music Snippets: <b>6 hous</b></li>
+                <li>Music Snippets: <b>6 hours</b></li>
                 <li>Research and Documentation: <b>6 hours</b></li>
                 <li>Task Creation and Organization: <b>1.5 hours</b></li>
                 <li>Meetings: <b>3 hours</b></li>
@@ -198,6 +267,8 @@
           </div>
         </div>
         <!-- End 2/6 Entry -->
+
+        <!-- Documents 3 hrs, Sound w Logan 1 hr, Music w ZW 1.5 hrs -->
 
       </div>
     </div>
@@ -732,7 +803,7 @@
         </div>
         <!-- End 11/28 Entry -->
 
-        <!-- 11/28 Entry -->
+        <!-- 12/12 Entry -->
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingFive">
             <h4 class="panel-title">
@@ -852,7 +923,7 @@
             </div>
           </div>
         </div>
-        <!-- End 11/28 Entry -->
+        <!-- End 12/12 Entry -->
       </div>
     </div>
     <!-- End Project Tower Blog Section -->
