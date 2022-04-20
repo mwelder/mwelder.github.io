@@ -278,7 +278,7 @@
               </a>
             </h4>
           </div>
-          <div id="collapsePR3" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPR3">
+          <div id="collapsePR3" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPR3">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
                 During the first week of this sprint, I had to focus on finishing up a
@@ -328,6 +328,140 @@
           </div>
         </div>
         <!-- End 4/3 Entry -->
+
+        <!-- 4/17 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPR4">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPR" href="#collapsePR4" aria-expanded="true" aria-controls="collapsePR4">
+                <!-- remove data-parent to make one open at a time ? -->
+                Pre-Beta III & Pre-Gold - Apr 17
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePR4" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPR4">
+            <div class="panel-body my-text-grey">
+              <p class="small-p-text">
+                For the past two weeks, I put in a lot of time for both creating
+                assets and implementation to make up for the moment in time a
+                few weeks ago where I  was busy outside of the studio. I got a
+                lot done!
+              </p>
+                <h3 class="w3-text-white">Music and SFX</h3>
+                <p class="small-p-text">
+                  I created a new arcade-inspired jump SFX and two music tracks
+                 one for the main menu and one for the Level 2 city area.
+               </p>
+                <figure style="width:50%" class="center">
+                  <figcaption>
+                    <h4>Jump SFX</h4>
+                  </figcaption>
+                  <audio controls src="jump_preview.mp3" type="audio/mp3" class="center">
+                    Your browser does not support the audio element.
+                  </audio>
+                </figure>
+                <figure style="width:50%" class="center">
+                  <figcaption>
+                    <h4>Main Menu Theme</h4>
+                  </figcaption>
+                  <audio controls src="mainMenu_preview.mp3" type="audio/mp3" class="center">
+                    Your browser does not support the audio element.
+                  </audio>
+                </figure>
+                <figure style="width:50%" class="center">
+                  <figcaption>
+                    <h4>Level 2 Theme</h4>
+                  </figcaption>
+                  <audio controls src="level2downtown_preview.mp3" type="audio/mp3" class="center">
+                    Your browser does not support the audio element.
+                  </audio>
+                </figure>
+                <p class="small-p-text">
+                  I tried making the Level 2 theme reflect that this area was
+                  supposed to be wealthier and more refined than Level 1, which had
+                  more energetic music, by using lush synth chords. But it includes
+                  a second section with more active percussion and a sequenced
+                  synth line that's used for the 'high-intensity' moments in the game.
+                  I unfortunately didn't get a chance to mix these tracks to perfection,
+                  but I made up for this by focusing on adaptive music which is a
+                  feature that I believe makes video game audio especially unique
+                  and impactful.
+              </p>
+              <h3 class="w3-text-white">Ambience</h3>
+              <p class="small-p-text">
+                Other members of the audio created three sets of ambiences for me
+                to use for Level 1, the Level 2 city area, and the Level 2 boss
+                fight in the office area. Each ambience was composed of 2-4 individual
+                tracks to create a rich soundscape of general urban ambience, flying cars,
+                machinery, howling wind, and more. In order for these ambiences
+                to sound even more convincing, I granulized each track, or, in
+                other words, I split each of them up into several sections to play
+                back in randomized sequences. Additionally, for the tracks that
+                include more discrete sounds (e.g. car honks), I applied randomization
+                to the volume, pitch, and low/high cut filters to make each instance
+                unique from one another.
+              </p>
+              <h3 class="w3-text-white">Implementation</h3>
+              <p class="small-p-text">
+                My biggest commitment in the past week was fine tuning implementation
+                and adding some cool new systems, like the adaptive music. From
+                the beginning, I had hoped to have adaptive music in the game and
+                I managed to realize this goal exactly how I envisioned it. I set
+                triggers throughout the levels to change a binary 'Intensity' state
+                between low and high states.
+                <br><br>
+                I composed the Level 2 theme to work well
+                with the vertical layering technique so that switching between low
+                and high states is as easy as switching out a layer for another or
+                muting/unmuting other layers in the mix. For example, there is a
+                second version of the drums track that adds delay and other
+                effects to sound fuller and there's also a glitchy synth line
+                that comes in only during the high-intensity parts.
+                <br><br>
+                The Level 1 music was a lot more difficult to implement since it
+                was composed of two sections (plus a transition segment) which
+                had too many contrasts to smoothly switch between via layering.
+                To combat this, I used a horizontal re-orchestration method where
+                these two main sections with the transition section were sequenced
+                together in realtime depending on the in-game intensity level.
+                In other words, the first section would loop on its own as long
+                as the intensity state is set to low. The moment the player enters
+                a high-intensity level, the transition section begins to play on
+                the next measure and this moves into the second main section which
+                loops on as long as the high intensity level is maintained. Once
+                another low-intensity state is triggered, the music waits until the
+                next measure to switch back to the first, low-intensity section.
+                <br><br>
+                I set up the high-intensity moments to happen during boss fights
+                and moments where the camera is locked in place for the player to
+                fight several waves of enemies before continuing. It's really fun
+                and satisfying to hear how the music's enemy rises and falls with
+                the game play.
+                <br><br>
+                I also implemented one more binary audio state which I called
+                'Ambience Zones'. In these areas, the music drops out to nearly
+                nothing and the background ambience is turned up. This was made
+                specifically for one key moment in Level 2 where the player crosses
+                a bridge and is given a chance to appreciate a clear view of the
+                background sceneray without any enemy encounters. During this moment,
+                in order to clarify to the player that this is a brief area of
+                respite for them to appreciate sight and sounds, I enabled the
+                ambience zone so that diegetic ambient sound would become the
+                focus until the next enemy enounter.
+              </p>
+              <h3 class="w3-text-white">Hours Breakdown</h3>
+              <ul>
+                <li>Implementation: <b>12 hours</b></li>
+                <li>Creating Music: <b>9 hours</b></li>
+                <li>Task Creation: <b>1 hour</b></li>
+                <li>Playtest: <b>1 hour</b></li>
+                <li>Meetings: <b>3 hours</b></li>
+                <li><i>Total: <b>26 hours</b></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End 4/17 Entry -->
 
       </div>
     </div>
