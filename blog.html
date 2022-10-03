@@ -76,6 +76,96 @@
       </div>
     </header>
 
+    <!-- Project Light Blog Section -->
+    <div class="w3-content my-text-grey w3-padding-32" id="blog">
+      <h2 class="w3-text-white">Project Light - Fall 2022</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="panel-group" id="accordionPL" role="tablist" aria-multiselectable="true">
+        <!-- consider changing from panel-group to accordion to try out accordion-flush https://getbootstrap.com/docs/5.0/components/accordion/ -->
+
+        <!-- 2/6 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL1">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL1" aria-expanded="true" aria-controls="collapsePL1">
+                <!-- remove data-parent to make one open at a time ? -->
+                Mid Pre-Alpha - Oct 2
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePL1" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPL1">
+            <div class="panel-body my-text-grey">
+              <p class="small-p-text">
+                Most of my time these first few weeks has been spent updating
+                the project’s audio-related documents and helping new audio team
+                members get acquainted with the project and the process of audio
+                implementation.
+              </p>
+              <h3 class="w3-text-white">Documentation and Organization</h3>
+              <p>
+                I created a new audio asset list with new columns for which
+                sounds have a first pass from the game’s summer prototype and
+                lists of which C# scripts trigger certain sound effects. Since I
+                want to do better with teaching others how to implement and
+                share those kinds of tasks across the team, keeping track of
+                where sounds are activated from the scripts will make it a lot
+                easier for us to keep track of and test our more complex
+                implementation methods.
+              </p>
+              <figure style="width:95%; float:center; margin:auto;">
+                <img src="AudioAssetListOct2.png" alt="Audio Asset List" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Audio Asset List</figcaption>
+              </figure>
+              <p>
+                I also added more stylistic details to our audio design document
+                and added to the team’s shared Youtube playlist of music and SFX
+                references. I’ll continually add to this as we define the game’s
+                tone and start making music in the next sprint.
+              </p>
+              <figure style="width:95%; float:center; margin:auto;">
+                <img src="AudioDesignDocOct2.png" alt="Audio Design Document" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Audio Design Document</figcaption>
+              </figure>
+              <p>
+                I’ve begun reorganizing the Wwise project to improve folder
+                structure, file naming conventions, and audio signal flow. To
+                make it easier than in previous project cycles for everyone to
+                share and access all of the game’s audio assets, I’ve organized
+                an audio asset folder that will stay on the shared repository
+                for easy version control and management.
+              </p>
+              <h3 class="w3-text-white">Creating SFX</h3>
+              <p>
+                Lastly, I created some new UI SFXs for the game which are a bit
+                darker and lower than what we’ve had previously. I’m excited to
+                test them out next week and hear how they fit into the game!
+              </p>
+              <figure style="width:50%" class="center">
+                <figcaption>
+                  <h4>New UI SFXs</h4>
+                </figcaption>
+                <audio controls src="UI_preview.wav" type="audio/wav" class="center">
+                  Your browser does not support the audio element.
+                </audio>
+              </figure>
+              <h3 class="w3-text-white">Hours Breakdown</h3>
+              <ul>
+                <li>Creating SFX: <b>3 hours</b></li>
+                <li>Project Organization and Documentation: <b>3 hours</b></li>
+                <li>Task Creation: <b>1.5 hours</b></li>
+                <li>Meetings: <b>7 hours</b></li>
+                <li><i>Total: <b>14.5 hours</b></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End 2/6 Entry -->
+
+      </div>
+    </div>
+    <!-- Project Light Blog Section -->
+
     <!-- Project Rage Blog Section -->
     <div class="w3-content my-text-grey w3-padding-32" id="blog">
     <img class="w3-image" src="ProjectRageLogo.png" alt="Project Rage Logo" width="92" style="float:right; margin-top:-32px">
@@ -339,7 +429,7 @@
               </a>
             </h4>
           </div>
-          <div id="collapsePR4" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPR4">
+          <div id="collapsePR4" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPR4">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
                 For the past two weeks, I put in a lot of time for both creating
