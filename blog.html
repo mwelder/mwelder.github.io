@@ -44,7 +44,7 @@
       <i class="fa fa-gamepad w3-xxlarge"></i>
       <p>BLOG</p>
     </a>
-    <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <a href="index.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-black">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>BACK TO HOME <i class="fa fa-external-link"></i></p>
     </a>
@@ -53,12 +53,9 @@
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
-      <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">BLOG</a>
+      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">BACK TO HOME</a>
+
     </div>
   </div>
 
@@ -85,7 +82,81 @@
       <div class="panel-group" id="accordionPL" role="tablist" aria-multiselectable="true">
         <!-- consider changing from panel-group to accordion to try out accordion-flush https://getbootstrap.com/docs/5.0/components/accordion/ -->
 
-        <!-- 2/6 Entry -->
+        <!-- 10/16 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL2">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL2" aria-expanded="true" aria-controls="collapsePL2">
+                <!-- remove data-parent to make one open at a time ? -->
+                Mid Pre-Beta - Oct 16
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePL2" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPL2">
+            <div class="panel-body my-text-grey">
+              <p class="small-p-text">
+                At the studio’s in-person work session, I got to work with
+                others on the audio team mostly by helping them with more
+                complex implementation tasks and navigating through the game’s
+                scripts. This production cycle is the first where I’ve involved
+                others into implementation tasks to this level and, while these
+                tasks can become complex and take a lot of time to figure out,
+                everyone is getting more familiar with the methods involved and
+                with the organization of the project, so I’m proud of our
+                progress!
+              </p>
+              <p class="small-p-text">
+                It was nice to be able to meet with the entire studio and audio
+                team in person at our studio-wide meeting week ago since it
+                allowed us to play through the current state of the game and
+                discuss next steps. At this point, even though we figured out
+                several new sound effects to consider and start working on, the
+                programming team hadn’t implemented them yet and it would be a
+                while until we had the corresponding art assets. Because of
+                this, we decided to start working on concept music slightly
+                earlier than I originally expected.
+              </p>
+              <p class="small-p-text">
+                This led to some really valuable conversations about a new
+                direction for music. Previously in the summer, my plan for music
+                was that each level theme would be split into low and high
+                intensity versions for the building and battle phases of the
+                game respectively. However, after working on my
+                <a href="https://studio.eecs.umich.edu/confluence/display/SUM22/Sonic+Palette+-+Morgan" target="_blank">
+                  <u>Sonic Palette</u>
+                </a>
+                and listening to others’ list of reference audio for that
+                ssignment, I started to consider new possibilities, especially
+                or more ambient styles of music. Everyone else on the team
+                provided their own thoughts and we started to consider more
+                ambient (yet tense) styles music for our battle phases and
+                contrasting this with more rhythmic and ‘moving’ styles for the
+                build phases. I have yet to update the audio design document
+                since we’re still fleshing out these details, but it’s exciting
+                to have a new plan that allows us to create a wider variety of
+                music that better supports the game’s horror theme.
+              </p>
+              <p "small-p-text">
+                With several new sound effects implemented and having the rest
+                of the team implement their own work, I’ve spent some extra time
+                reorganizing the Wwise project to be easier to navigate for
+                everyone and to allow it to grow for the future as we add more
+                sounds.
+              </p>
+              <h3 class="w3-text-white">Hours Breakdown</h3>
+              <ul>
+                <li>Meetings: <b>6 hours</b></li>
+                <li>Project Organization and Documentation: <b>2 hours</b></li>
+                <li>Audio Implementation: <b>3 hours</b></li>
+                <li>Task Creation: <b>1 hour</b></li>
+                <li><i>Total: <b>12 hours</b></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End 10/16 Entry -->
+
+        <!-- 10/2 Entry -->
         <div class="panel panel-default">
           <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL1">
             <h4 class="panel-title">
@@ -95,7 +166,7 @@
               </a>
             </h4>
           </div>
-          <div id="collapsePL1" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPL1">
+          <div id="collapsePL1" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL1">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
                 Most of my time these first few weeks has been spent updating
@@ -161,7 +232,7 @@
             </div>
           </div>
         </div>
-        <!-- End 2/6 Entry -->
+        <!-- End 10/2 Entry -->
 
       </div>
     </div>
