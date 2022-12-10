@@ -82,88 +82,157 @@
       <div class="panel-group" id="accordionPL" role="tablist" aria-multiselectable="true">
         <!-- consider changing from panel-group to accordion to try out accordion-flush https://getbootstrap.com/docs/5.0/components/accordion/ -->
 
-        <!-- 11/28 Entry -->
+        <!-- 10/2 Entry -->
         <div class="panel panel-default">
-          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL4">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL1">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL4" aria-expanded="true" aria-controls="collapsePL4">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL1" aria-expanded="true" aria-controls="collapsePL1">
                 <!-- remove data-parent to make one open at a time ? -->
-                QA Sprint - Nov 28
+                Mid Pre-Alpha - Oct 2
               </a>
             </h4>
           </div>
-          <div id="collapsePL4" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPL4">
+          <div id="collapsePL1" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL1">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
-                Just before the Thanksgiving break, the whole audio team was
-                able to come into the audio studio at the Duderstadt Center for
-                our second and last recording session for voice acting.
-                <br><br>
-                I arrived at the studio earlier than everyone else in order to
-                set up microphones, personal meixers, and route all of the audio
-                into the control room. While I ran into a few set up
-                difficulties the first session after not having used the studio
-                in some time, this last session I was able to go through all the
-                motions and refer to my previous patchbay routing scheme super
-                quickly!
-                <br><br>
-                The rest of team arrived at the studio in time for us to
-                attend the remote studio-wide meeting and we had our department
-                meeting later in the day between recording our voice actors.
-                <br><br>
-                We got to record 4 actors, all volunteers from within WolverineSoft
-                Studio. We recorded one actor at a time, but had a second mic
-                monitored for Lea as she ran through lines with the actors. We
-                considered a few different mics and ended up using the
-                Electro-Voice RE20. Lea was familiar with this model for being
-                used for older radio broadcasts. We selected it for the fact
-                that it sounded slightly less bright and modern in comparison to
-                other commonly used mics for podcasts, which makes sense as these
-                voices are going through the comms of a submarine. The voices
-                and sound quality all turned out really well!
-                <figure style="width:80%; float:center; margin:auto;">
-                  <img src="IMG_0524.png" alt="Patchbay Routing" style="width:40%;">
-                  <img src="IMG_0527.png" alt="Recording Isolation Booth" style="width:40%;">
-                </figure>
-                <figure style="width:80%; float:center; margin:auto;">
-                  <img src="IMG_0551.png" alt="Lea and Gibby Recording Lines" style="width:65%;">
-                </figure>
-                <figure style="width:80%; float:center; margin:auto;">
-                  <img src="IMG_0526.png" alt="Control Room of Audio Studio A" style="width:65%;">
-                </figure>
+                Most of my time these first few weeks has been spent updating
+                the project’s audio-related documents and helping new audio team
+                members get acquainted with the project and the process of audio
+                implementation.
               </p>
+              <h3 class="w3-text-white">Documentation and Organization</h3>
+              <p>
+                I created a new audio asset list with new columns for which
+                sounds have a first pass from the game’s summer prototype and
+                lists of which C# scripts trigger certain sound effects. Since I
+                want to do better with teaching others how to implement and
+                share those kinds of tasks across the team, keeping track of
+                where sounds are activated from the scripts will make it a lot
+                easier for us to keep track of and test our more complex
+                implementation methods.
+              </p>
+              <figure style="width:95%; float:center; margin:auto;">
+                <img src="AudioAssetListOct2.png" alt="Audio Asset List" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Audio Asset List</figcaption>
+              </figure>
+              <p>
+                I also added more stylistic details to our audio design document
+                and added to the team’s shared Youtube playlist of music and SFX
+                references. I’ll continually add to this as we define the game’s
+                tone and start making music in the next sprint.
+              </p>
+              <figure style="width:95%; float:center; margin:auto;">
+                <img src="AudioDesignDocOct2.png" alt="Audio Design Document" style="width:100%;">
+                <figcaption style="text-align:center; color: white">Audio Design Document</figcaption>
+              </figure>
+              <p>
+                I’ve begun reorganizing the Wwise project to improve folder
+                structure, file naming conventions, and audio signal flow. To
+                make it easier than in previous project cycles for everyone to
+                share and access all of the game’s audio assets, I’ve organized
+                an audio asset folder that will stay on the shared repository
+                for easy version control and management.
+              </p>
+              <h3 class="w3-text-white">Creating SFX</h3>
+              <p>
+                Lastly, I created some new UI SFXs for the game which are a bit
+                darker and lower than what we’ve had previously. I’m excited to
+                test them out next week and hear how they fit into the game!
+              </p>
+              <figure style="width:50%" class="center">
+                <figcaption>
+                  <h4>New UI SFXs</h4>
+                </figcaption>
+                <audio controls src="UI_preview.wav" type="audio/wav" class="center">
+                  Your browser does not support the audio element.
+                </audio>
+              </figure>
               <h3 class="w3-text-white">Hours Breakdown</h3>
               <ul>
-                <li>Mentorship Meeting: <b>1 hour</b></li>
-                <li>Audio Implementation: <b>2 hours</b></li>
-                <li>Voice Over Recording Session: <b>5 hours</b></li>
-                <li>Task Creation & Planning: <b>1 hour</b></li>
-                <li><i>Total: <b>9 hours</b></i></li>
+                <li>Creating SFX: <b>3 hours</b></li>
+                <li>Project Organization and Documentation: <b>3 hours</b></li>
+                <li>Task Creation: <b>1.5 hours</b></li>
+                <li>Meetings: <b>7 hours</b></li>
+                <li><i>Total: <b>14.5 hours</b></i></li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- End 11/28 Entry -->
+        <!-- End 10/2 Entry -->
 
-        <!-- 11/13 Entry -->
+        <!-- 10/16 Entry -->
         <div class="panel panel-default">
-          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL4">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL2">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL4" aria-expanded="true" aria-controls="collapsePL4">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL2" aria-expanded="true" aria-controls="collapsePL2">
                 <!-- remove data-parent to make one open at a time ? -->
-                End of Pre-Beta II - Nov 13
+                Mid Pre-Beta I - Oct 16
               </a>
             </h4>
           </div>
-          <div id="collapsePL4" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL4">
+          <div id="collapsePL2" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL2">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
-                <!-- New music system (SO objects). Implemented new music/ambience. Recording session. -->
+                At the studio’s in-person work session, I got to work with
+                others on the audio team mostly by helping them with more
+                complex implementation tasks and navigating through the game’s
+                scripts. This production cycle is the first where I’ve involved
+                others into implementation tasks to this level and, while these
+                tasks can become complex and take a lot of time to figure out,
+                everyone is getting more familiar with the methods involved and
+                with the organization of the project, so I’m proud of our
+                progress!
               </p>
+              <p class="small-p-text">
+                It was nice to be able to meet with the entire studio and audio
+                team in person at our studio-wide meeting week ago since it
+                allowed us to play through the current state of the game and
+                discuss next steps. At this point, even though we figured out
+                several new sound effects to consider and start working on, the
+                programming team hadn’t implemented them yet and it would be a
+                while until we had the corresponding art assets. Because of
+                this, we decided to start working on concept music slightly
+                earlier than I originally expected.
+              </p>
+              <p class="small-p-text">
+                This led to some really valuable conversations about a new
+                direction for music. Previously in the summer, my plan for music
+                was that each level theme would be split into low and high
+                intensity versions for the building and battle phases of the
+                game respectively. However, after working on my
+                <a href="https://studio.eecs.umich.edu/confluence/display/SUM22/Sonic+Palette+-+Morgan" target="_blank">
+                  <u>Sonic Palette</u>
+                </a>
+                and listening to others’ list of reference audio for that
+                ssignment, I started to consider new possibilities, especially
+                or more ambient styles of music. Everyone else on the team
+                provided their own thoughts and we started to consider more
+                ambient (yet tense) styles music for our battle phases and
+                contrasting this with more rhythmic and ‘moving’ styles for the
+                build phases. I have yet to update the audio design document
+                since we’re still fleshing out these details, but it’s exciting
+                to have a new plan that allows us to create a wider variety of
+                music that better supports the game’s horror theme.
+              </p>
+              <p "small-p-text">
+                With several new sound effects implemented and having the rest
+                of the team implement their own work, I’ve spent some extra time
+                reorganizing the Wwise project to be easier to navigate for
+                everyone and to allow it to grow for the future as we add more
+                sounds.
+              </p>
+              <h3 class="w3-text-white">Hours Breakdown</h3>
+              <ul>
+                <li>Meetings: <b>6 hours</b></li>
+                <li>Project Organization and Documentation: <b>2 hours</b></li>
+                <li>Audio Implementation: <b>3 hours</b></li>
+                <li>Task Creation: <b>1 hour</b></li>
+                <li><i>Total: <b>12 hours</b></i></li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End 11/13 Entry -->
+        <!-- End 10/16 Entry -->
 
         <!-- 10/30 Entry -->
         <div class="panel panel-default">
@@ -255,157 +324,178 @@
         </div>
         <!-- End 10/30 Entry -->
 
-        <!-- 10/16 Entry -->
+        <!-- 11/13 Entry -->
         <div class="panel panel-default">
-          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL2">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL4">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL2" aria-expanded="true" aria-controls="collapsePL2">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL4" aria-expanded="true" aria-controls="collapsePL4">
                 <!-- remove data-parent to make one open at a time ? -->
-                Mid Pre-Beta I - Oct 16
+                End of Pre-Beta II - Nov 13
               </a>
             </h4>
           </div>
-          <div id="collapsePL2" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL2">
+          <div id="collapsePL4" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL4">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
-                At the studio’s in-person work session, I got to work with
-                others on the audio team mostly by helping them with more
-                complex implementation tasks and navigating through the game’s
-                scripts. This production cycle is the first where I’ve involved
-                others into implementation tasks to this level and, while these
-                tasks can become complex and take a lot of time to figure out,
-                everyone is getting more familiar with the methods involved and
-                with the organization of the project, so I’m proud of our
-                progress!
+                <!-- New music system (SO objects). Implemented new music/ambience. Recording session. -->
               </p>
+            </div>
+          </div>
+        </div>
+        <!-- End 11/13 Entry -->
+
+        <!-- 11/28 Entry -->
+        <div class="panel panel-default">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL4">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL5" aria-expanded="true" aria-controls="collapsePL5">
+                <!-- remove data-parent to make one open at a time ? -->
+                QA Sprint - Nov 28
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePL5" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL5">
+            <div class="panel-body my-text-grey">
               <p class="small-p-text">
-                It was nice to be able to meet with the entire studio and audio
-                team in person at our studio-wide meeting week ago since it
-                allowed us to play through the current state of the game and
-                discuss next steps. At this point, even though we figured out
-                several new sound effects to consider and start working on, the
-                programming team hadn’t implemented them yet and it would be a
-                while until we had the corresponding art assets. Because of
-                this, we decided to start working on concept music slightly
-                earlier than I originally expected.
-              </p>
-              <p class="small-p-text">
-                This led to some really valuable conversations about a new
-                direction for music. Previously in the summer, my plan for music
-                was that each level theme would be split into low and high
-                intensity versions for the building and battle phases of the
-                game respectively. However, after working on my
-                <a href="https://studio.eecs.umich.edu/confluence/display/SUM22/Sonic+Palette+-+Morgan" target="_blank">
-                  <u>Sonic Palette</u>
-                </a>
-                and listening to others’ list of reference audio for that
-                ssignment, I started to consider new possibilities, especially
-                or more ambient styles of music. Everyone else on the team
-                provided their own thoughts and we started to consider more
-                ambient (yet tense) styles music for our battle phases and
-                contrasting this with more rhythmic and ‘moving’ styles for the
-                build phases. I have yet to update the audio design document
-                since we’re still fleshing out these details, but it’s exciting
-                to have a new plan that allows us to create a wider variety of
-                music that better supports the game’s horror theme.
-              </p>
-              <p "small-p-text">
-                With several new sound effects implemented and having the rest
-                of the team implement their own work, I’ve spent some extra time
-                reorganizing the Wwise project to be easier to navigate for
-                everyone and to allow it to grow for the future as we add more
-                sounds.
+                Just before the Thanksgiving break, the whole audio team was
+                able to come into the audio studio at the Duderstadt Center for
+                our second and last recording session for voice acting.
+                <br><br>
+                I arrived at the studio earlier than everyone else in order to
+                set up microphones, personal meixers, and route all of the audio
+                into the control room. While I ran into a few set up
+                difficulties the first session after not having used the studio
+                in some time, this last session I was able to go through all the
+                motions and refer to my previous patchbay routing scheme super
+                quickly!
+                <br><br>
+                The rest of team arrived at the studio in time for us to
+                attend the remote studio-wide meeting and we had our department
+                meeting later in the day between recording our voice actors.
+                <br><br>
+                We got to record 4 actors, all volunteers from within WolverineSoft
+                Studio. We recorded one actor at a time, but had a second mic
+                monitored for Lea as she ran through lines with the actors. We
+                considered a few different mics and ended up using the
+                Electro-Voice RE20. Lea was familiar with this model for being
+                used for older radio broadcasts. We selected it for the fact
+                that it sounded slightly less bright and modern in comparison to
+                other commonly used mics for podcasts, which makes sense as these
+                voices are going through the comms of a submarine. The voices
+                and sound quality all turned out really well!
+                <figure style="width:80%; float:center; margin:auto;">
+                  <img src="IMG_0524.png" alt="Patchbay Routing" style="width:40%;">
+                  <img src="IMG_0527.png" alt="Recording Isolation Booth" style="width:40%;">
+                </figure>
+                <figure style="width:80%; float:center; margin:auto;">
+                  <img src="IMG_0551.png" alt="Lea and Gibby Recording Lines" style="width:65%;">
+                </figure>
+                <figure style="width:80%; float:center; margin:auto;">
+                  <img src="IMG_0526.png" alt="Control Room of Audio Studio A" style="width:65%;">
+                </figure>
               </p>
               <h3 class="w3-text-white">Hours Breakdown</h3>
               <ul>
-                <li>Meetings: <b>6 hours</b></li>
-                <li>Project Organization and Documentation: <b>2 hours</b></li>
-                <li>Audio Implementation: <b>3 hours</b></li>
-                <li>Task Creation: <b>1 hour</b></li>
-                <li><i>Total: <b>12 hours</b></i></li>
+                <li>Mentorship Meeting: <b>1 hour</b></li>
+                <li>Audio Implementation: <b>2 hours</b></li>
+                <li>Voice Over Recording Session: <b>5 hours</b></li>
+                <li>Task Creation & Planning: <b>1 hour</b></li>
+                <li><i>Total: <b>9 hours</b></i></li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- End 10/16 Entry -->
+        <!-- End 11/28 Entry -->
 
-        <!-- 10/2 Entry -->
+        <!-- 12/11 Entry -->
         <div class="panel panel-default">
-          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL1">
+          <div class="panel-heading w3-text-black w3-light-grey w3-hover-grey" role="tab" id="headingPL4">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL1" aria-expanded="true" aria-controls="collapsePL1">
+              <a role="button" data-toggle="collapse" data-parent="#accordionPL" href="#collapsePL6" aria-expanded="true" aria-controls="collapsePL6">
                 <!-- remove data-parent to make one open at a time ? -->
-                Mid Pre-Alpha - Oct 2
+                QA Sprint II - Dec 11
               </a>
             </h4>
           </div>
-          <div id="collapsePL1" class="panel-collapse collapse my-dark-grey" role="tabpanel" aria-labelledby="headingPL1">
+          <div id="collapsePL6" class="panel-collapse collapse my-dark-grey in" role="tabpanel" aria-labelledby="headingPL6">
             <div class="panel-body my-text-grey">
               <p class="small-p-text">
-                Most of my time these first few weeks has been spent updating
-                the project’s audio-related documents and helping new audio team
-                members get acquainted with the project and the process of audio
+                The audio team had a very busy and productive final stretch to
+                the end! We got voice over fully implemented, varied the ambiences
+                through the game, improved both scripted and dynamic music
+                transitions, and did a lot of polishing mixing and tweaking of
                 implementation.
               </p>
-              <h3 class="w3-text-white">Documentation and Organization</h3>
-              <p>
-                I created a new audio asset list with new columns for which
-                sounds have a first pass from the game’s summer prototype and
-                lists of which C# scripts trigger certain sound effects. Since I
-                want to do better with teaching others how to implement and
-                share those kinds of tasks across the team, keeping track of
-                where sounds are activated from the scripts will make it a lot
-                easier for us to keep track of and test our more complex
-                implementation methods.
+              <h3 class="w3-text-white">Editing the Recorded Dialogue</h3>
+              <p class="small-p-text">
+                My first major task of the last 2 weeks was to cut up half the
+                dialogue into discrete lines and takes (Lea took care of the
+                second half), then I took all our cut dialogue and applied various
+                effects in a batch process treating the audio to be clearer
+                and more consistent in volume. More specifically, it was a process
+                of low-pass filters, noise reduction, loudness normalization,
+                compression, noise gating, and amplification. Once I had settled
+                on all of the effects and their settings, the batch processing
+                allowed me to efficiently treat the 70+ takes that we ultimately
+                selected for final use in the game.
+              </p>
+              <h3 class="w3-text-white">Music and Ambience Transitions</h3>
+              <p class="small-p-text">
+                The most challenging (and time-consuming) final task I had was to
+                improve music transitions. Certain music and ambience Wwise events
+                were selected to be triggered at certain points in the game
+                (e.g. specific moments in dialogue, upon switching to a build or
+                battle phase in gameplay). Previously, audio events were added as
+                member variables of a specific type of Encounter SO which was a
+                little limiting since some of the key audio transitions we wanted
+                occurred somewhere in between these overarching encounters.
+                <br><br>
+                Since there were just a few Unity
+                scenes and unique features of story and gameplay progression
+                were handled by a series of various Scriptable Object (SO)
+                classes, I created my own SO, named a Scene Audio SO, that
+                allowed me to insert audio events with flexbility. This Scene
+                Audio SO contained audio events and other variables that would
+                be passed onto my main Music Manager script, and this SO was
+                added as a member variable to all of the various other SO's that
+                managed dialogue branches and level progression. I could now put
+                new music and/or audio wherever I want very accurately!
               </p>
               <figure style="width:95%; float:center; margin:auto;">
-                <img src="AudioAssetListOct2.png" alt="Audio Asset List" style="width:100%;">
-                <figcaption style="text-align:center; color: white">Audio Asset List</figcaption>
+                <img src="SceneAudioSO_Screenshot.png" alt="Scene Audio SO C# Script" style="width:55%;">
+                <img src="StartMusic_MusicManager_Screenshot.png" alt="Start Music function in Music Manager C# Script" style="width:35%;">
+                <figcaption style="text-align:center; color: white">C# Scripts for SceneAudioSO and StartMusic() in MusicManager</figcaption>
               </figure>
-              <p>
-                I also added more stylistic details to our audio design document
-                and added to the team’s shared Youtube playlist of music and SFX
-                references. I’ll continually add to this as we define the game’s
-                tone and start making music in the next sprint.
+              <h3 class="w3-text-white">Final Thoughts</h3>
+              <p class="small-p-text">
+                A few other things I worked on towards the end of the project
+                included fixing small audio bugs,
+                improving the looping and transitions of our several dynamically
+                evolving music tracks in Wwise, and improving the special audio
+                transitions and effects for when the game is paused and upon
+                finishing a battle.
+                <br><br>
+                The entire rest of the audio team was also really productive and
+                hard working until the very end. We got so much done this semester
+                and I'm really glad to have worked with such a talented and
+                dedicated group for my last semester as the audio lead in
+                WolverineSoft Studio. I'll be in the studio one more time next
+                semester, before I graduate, as a member
+                of the audio team and am looking forward to working with the rest
+                who are able to return to the team!
               </p>
-              <figure style="width:95%; float:center; margin:auto;">
-                <img src="AudioDesignDocOct2.png" alt="Audio Design Document" style="width:100%;">
-                <figcaption style="text-align:center; color: white">Audio Design Document</figcaption>
-              </figure>
-              <p>
-                I’ve begun reorganizing the Wwise project to improve folder
-                structure, file naming conventions, and audio signal flow. To
-                make it easier than in previous project cycles for everyone to
-                share and access all of the game’s audio assets, I’ve organized
-                an audio asset folder that will stay on the shared repository
-                for easy version control and management.
-              </p>
-              <h3 class="w3-text-white">Creating SFX</h3>
-              <p>
-                Lastly, I created some new UI SFXs for the game which are a bit
-                darker and lower than what we’ve had previously. I’m excited to
-                test them out next week and hear how they fit into the game!
-              </p>
-              <figure style="width:50%" class="center">
-                <figcaption>
-                  <h4>New UI SFXs</h4>
-                </figcaption>
-                <audio controls src="UI_preview.wav" type="audio/wav" class="center">
-                  Your browser does not support the audio element.
-                </audio>
-              </figure>
               <h3 class="w3-text-white">Hours Breakdown</h3>
               <ul>
-                <li>Creating SFX: <b>3 hours</b></li>
-                <li>Project Organization and Documentation: <b>3 hours</b></li>
-                <li>Task Creation: <b>1.5 hours</b></li>
-                <li>Meetings: <b>7 hours</b></li>
-                <li><i>Total: <b>14.5 hours</b></i></li>
+                <li>Studio-wide Meeting: <b>2.5 hours</b></li>
+                <li>Audio Implementation & Bug Fixing: <b>10 hours</b></li>
+                <li>Voice Over Audio Editing and Processing: <b>3 hours</b></li>
+                <li>Task Creation & Planning: <b>1 hour</b></li>
+                <li><i>Total: <b>16.5 hours</b></i></li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- End 10/2 Entry -->
+        <!-- End 12/11 Entry-->
 
       </div>
     </div>
